@@ -13,6 +13,22 @@ aside {
   & .aside-container {
     max-width: 31rem;
   }
+
+  & .aside-container h1 {
+    font: var(--txt-xl);
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  & .aside-container h1 > span {
+    color: var(--text-highlight);
+  }
+
+  & .aside-container p {
+    font: var(--txt);
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
 }
 
 main {
@@ -22,5 +38,27 @@ main {
   & .main-container {
     margin-left: auto;
     max-width: 33rem;
+  }
+
+  & .back {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  & .primary-header {
+    margin-bottom: 3rem;
+  }
+
+  & .primary-header h1 {
+    font: var(--txt-lg);
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  & .primary-header p {
+    font: var(--txt);
+    color: var(--text-secondary);
   }
 }

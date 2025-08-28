@@ -17,19 +17,65 @@
     <div id="app">
       <main>
         <div class="main-container">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-          perspiciatis earum pariatur delectus alias enim et tempore porro
-          numquam, corporis doloribus soluta a at, vero exercitationem aperiam
-          nostrum? Tempore, maiores. lorem*30
+          <div class="back">
+            <img src="./assets/icons/arrow-left-02.svg" alt="Voltar" />
+            <span>Voltar</span>
+          </div>
+          <header class="primary-header">
+            <h1>Formulário de matrícula</h1>
+            <p>
+              Preencha os dados abaixo para matricular seu filho na escola de
+              educação infantil Estrelas do Amanhã.
+            </p>
+          </header>
+
+          <form method="post" enctype="multipart/form-data">
+            <fieldset class="child-info">
+              <legend>Informações da criança</legend>
+              <div class="input-wrapper">
+                <label for="name">Nome completo</label>
+                <input type="text" name="name" id="name" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="birth">Data de nascimento</label>
+                <input type="date" name="birth" id="birth" />
+              </div>
+
+              <div class="select-wrapper">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender">
+                  <option value="female">Feminino</option>
+                  <option value="masculine">Masculino</option>
+                </select>
+              </div>
+
+              <div class="textarea-wrapper">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+
+              <div class="file-wrapper">
+                <input type="file" name="birth-file" id="birth-file" />
+                <img src="./assets/icons/cloud-upload.svg" alt="" />
+                <p>Clique aqui para selecionar os arquivos</p>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </main>
 
       <aside>
         <div class="aside-container">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-          placeat porro natus, sequi asperiores consequatur molestias hic optio
-          laudantium quas sit reiciendis dignissimos aliquid maxime esse fugiat
-          quaerat. Nemo, harum.
+          <img src="./assets/Logo.svg" alt="Logo da escola" />
+          <h1>Porque cada momento de <span>aprendizado</span> conta</h1>
+          <p>
+            Inscreva seu filho em nossa escola e veja-o florescer em um ambiente
+            acolhedor, seguro e estimulante.
+          </p>
+          <img
+            src="./assets/Illustration.svg"
+            alt="Ilustração das crianças sentadas junto com a professora que está mostrando um desenho de estrela"
+          />
         </div>
       </aside>
     </div>
