@@ -55,3 +55,14 @@ select {
 textarea {
   resize: none;
 }
+
+.input-wrapper:has([disabled]) {
+  opacity: 50%;
+}
+
+input {
+  &[disabled] {
+    background-color: var(--surface-disabled);
+    border: 1px solid var(--stroke-default);
+  }
+}

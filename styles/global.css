@@ -20,6 +20,7 @@
 
   --stroke-default: #d6d3d1;
   --stroke-highlight: #f3541c;
+  --stroke-disabled: 
 
   --semantic-error: #dc2626;
 
@@ -42,4 +43,17 @@
 
 body {
   font: var(--txt-sm);
+}
+
+.flex {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
 }
