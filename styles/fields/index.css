@@ -75,10 +75,6 @@ input {
     border: 1px solid var(--semantic-error);
   }
 
-  &:not(:focus):valid + .error {
-    display: none;
-  }
-
   &[required] + .error {
     display: flex;
     align-items: center;
@@ -86,5 +82,9 @@ input {
     margin-top: 0.6rem;
 
     color: var(--semantic-error);
+  }
+
+  &:valid + .error {
+    display: none;
   }
 }
