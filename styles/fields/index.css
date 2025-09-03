@@ -65,4 +65,26 @@ input {
     background-color: var(--surface-disabled);
     border: 1px solid var(--stroke-default);
   }
+
+  & + small {
+    color: #78716c;
+    font-size: 0.7rem;
+  }
+
+  &:invalid {
+    border: 1px solid var(--semantic-error);
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+
+    color: var(--semantic-error);
+  }
 }
