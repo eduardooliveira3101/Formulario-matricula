@@ -10,20 +10,22 @@ label + .radio-wrapper {
 
 .radio-inner {
   border: 1px solid var(--stroke-default);
-
   border-radius: 0.5rem;
-  display: grid;
 
+  display: grid;
   justify-items: center;
   gap: 0.5rem;
 
   padding: 2rem 0.5rem 0.5rem;
+
   position: relative;
 
   & input,
   & input:focus,
   & input:hover {
     all: unset;
+    position: absolute;
+    inset: 0;
   }
 
   .radio-image {
@@ -31,6 +33,7 @@ label + .radio-wrapper {
     background-repeat: no-repeat;
     width: 1.5rem;
     height: 1.5rem;
+
     position: absolute;
     top: 0.5rem;
     left: 0.5rem;
@@ -42,6 +45,7 @@ label + .radio-wrapper {
 
     & .radio-image {
       background-image: url(../../assets/icons/radio-hover.svg);
+      background-repeat: no-repeat;
     }
   }
 
@@ -50,6 +54,7 @@ label + .radio-wrapper {
 
     & .radio-image {
       background-image: url(../../assets/icons/radio-checked.svg);
+      background-repeat: no-repeat;
     }
   }
 }
